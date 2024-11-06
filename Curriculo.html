@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Mateus Theobald</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #dff0e3, #a8d5ba);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 850px;
+            width: 100%;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            background: linear-gradient(90deg, #004b28, #007f4f);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .header p {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+        .content {
+            padding: 20px 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .habilidades {
+            margin-left: 30px;     
+        }
+        h2 {
+            font-size: 2em;
+            color: #007f4f;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e3e3e3;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .about, .experience, .education, .skills, .languages, .projects, .contact {
+            background: #f4f8f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: background 0.3s, transform 0.3s;
+        }
+        .about:hover, .experience:hover, .education:hover, .skills:hover, .languages:hover, .projects:hover, .contact:hover {
+            background: #e2f2e5;
+            transform: translateY(-5px);
+        }
+        .experience h3, .education h3, .projects a {
+            font-size: 1.4em;
+            color: #004b28;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .experience h3:hover, .education h3:hover, .projects a:hover {
+            color: #007f4f;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skills-list span {
+            background-color: #007f4f;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .skills-list span:hover {
+            background-color: #005f3b;
+        }
+        .language-skill {
+            margin-bottom: 15px;
+        }
+        .language-skill h3 {
+            font-size: 1.2em;
+            color: #004b28;
+            margin-bottom: 5px;
+        }
+        .progress-bar-container {
+            background-color: #e3e3e3;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 20px;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #007f4f;
+            transition: width 0.4s ease;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: #004b28;
+        }
+        .contact-info a {
+            color: #007f4f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #005f3b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="header">
+            <h1>Mateus Delucas Theobald</h1>
+            <p>Analista em Desenvolvimento de Sistemas | Hortolândia, São Paulo</p>
+        </section>
+
+        <section class="section contact">
+            <h2>Contato Pessoal</h2>
+            <p class="contact-info">📧 Email: <a href="mailto:delucasmateusth@gmail.com">delucasmateusth@gmail.com</a></p>
+            <p class="contact-info">📞 Telefone: (19) 989327759</p>
+            <p class="contact-info">💼 LinkedIn: <a href="https://www.linkedin.com/in/mateus-theobald" target="_blank">Mateus Theobald</a></p>
+        </section>
+
+        <div class="content">
+            <section class="section about">
+                <h2>Sobre Mim</h2>
+                <p>Sou analista em desenvolvimento de sistemas, com 20 anos e experiência prática em tecnologia, abrangendo tanto habilidades com software quanto com hardware. Possuo uma forte capacidade para diagnosticar e resolver problemas técnicos, além de desenvolver soluções eficientes e adaptáveis para ambientes variados. Meus conhecimentos práticos permitem que eu trabalhe com diferentes áreas de tecnologia, sempre com foco na otimização e inovação dos processos.</p>
+            </section>
+
+            <section class="section">
+                <h2>Experiência Profissional</h2>
+                <div class="experience">
+                    <h3>Analista em Desenvolvimento de Sistemas - Linhares Distribuidora</h3>
+                    <p><em>Jul 2024 - Presente</em></p>
+                    <p>Minhas responsabilidades incluem o gerenciamento de um aplicativo de controle de funcionários externos, manutenção de dispositivos da empresa, atualização do CRM, criação e liberação de usuários para colaboradores, controle e manutenção de celulares externos, e garantir o funcionamento adequado dos dispositivos da empresa.</p>
+                </div>
+                <div class="experience">
+                    <h3>Auxiliar Administrativo - Linhares Distribuidora</h3>
+                    <p><em>set 2023 - jun 2024</em></p>
+                    <p>Minhas responsabilidades incluem a gestão do setor de atendimento, realização de treinamentos para funcionários externos, análise de dados no Excel e cadastro de novas lojas.</p>
+                </div>
+                <div class="experience">
+                    <h3>Estoquista - Linhares Distribuidora</h3>
+                    <p><em>mar 2022 - ago 2023</em></p>
+                    <p>Minhas responsabilidades incluem a separação de pedidos, reposição de estoque, conferência de pedidos, emissão de nota fiscal e montagem de pallets.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Educação</h2>
+                <div class="education">
+                    <h3>Ensino Fundamental - Sesi</h3>
+                    <p><em>jan 2013 - dez 2018</em></p>
+                </div>
+                <div class="education">
+                    <h3>Ensino Médio - E.E Priscila Fernandes da Rocha</h3>
+                    <p><em>jan 2019 - dez 2021</em></p>
+                </div>
+                <div class="education">
+                    <h3>Bacharelado em Sistemas de Informação - Unasp</h3>
+                    <p><em>jul 2022 - Presente</em></p>
+                </div>
+                <div class="education">
+                    <h3>Inglês - Cidadão Pró-mundo</h3>
+                    <p><em>ago 2018 - jul 2022</em></p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-list">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Python</span>
+                    <span>Git</span>
+                    <span>SQL</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Habilidades Pessoais</h2>
+                <div class="skills-list">
+                    <span>Comunicativo</span>
+                    <span>Comprometido</span>
+                    <span>Organizado</span>
+                    <span>Criativo</span>
+                    <span>Proativo</span>
+                    <span>Trabalho em Equipe</span>
+            </section>
+
+            <section class="section">
+                <h2>Cursos Profissionalizantes</h2>
+                <div class="habilidades">
+                <ul>
+                    <li>Administração de Pessoas</li>
+                    <li>Introdução a Informática</li>
+                    <li>Lógica de Programação </li>
+                    <li>Fórmulas e Gráficos Excel </li>
+                    <li>Tecnologia da Informação e Comunicação</li>
+                    <li>Manutenção De Celulares</li>
+                </ul>
+                </div>
+            </section>
+
+            <section class="section languages">
+                <h2>Idiomas</h2>
+                <div class="language-skill">
+                    <h3>Português</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="language-skill">
+                    <h3>Inglês</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 55%;"></div>
+                    </div>
+                </div>
+                <div class="language-skill">
+                    <h3>Espanhol</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
